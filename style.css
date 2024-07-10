@@ -1,1 +1,28 @@
 /* All style elements for your extension go here */
+
+.copy-button {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 60px; /* Adjusted for the text content */
+	margin: 4px;
+	opacity: 0.4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f0f0f0; /* Light grey background for visibility */
+	border: none; /* Remove default button border */
+	border-radius: 4px; /* Optional: rounded corners for aesthetics */
+	font-size: 0.8rem; /* Smaller font size for the button text */
+}
+
+.copy-button:hover {
+	opacity: 0.8;
+}
+
+blockquote {
+	position: relative; /* To position the copy button absolutely within it */
+	padding-left: 30px; /* Ensure text does not overlap the copy button */
+}
